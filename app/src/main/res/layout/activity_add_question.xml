@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".AddQuestion">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:text="Add Question"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/qid"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Question ID"
+        android:layout_below="@id/tv1"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/ques"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Question"
+        android:layout_below="@id/qid"
+        android:textColor="@color/white"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/A"
+        android:hint="Option A"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/ques"
+        android:textColor="@color/white"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/B"
+        android:hint="Option B"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/A"
+        android:textColor="@color/white"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/C"
+        android:hint="Option C"
+        android:layout_below="@id/B"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/D"
+        android:hint="Option D"
+        android:layout_below="@id/C"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/Ans"
+        android:textColorHint="@color/white"
+        android:layout_below="@id/D"
+        android:layout_marginTop="20dp"
+        android:hint="Correct Answer"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Add Question"
+        android:textColor="@color/white"
+        android:layout_below="@id/Ans"
+        android:id="@+id/addq"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="100dp"
+        />
+
+
+
+</RelativeLayout>

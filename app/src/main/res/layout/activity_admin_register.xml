@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".AdminRegister">
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="651dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="Admin Register"
+        android:textColor="@color/yellow"
+        android:textSize="30dp"
+         />
+
+    <EditText
+        android:id="@+id/fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Full name"
+        android:padding="10dp"
+        android:layout_below="@id/signin"
+        />
+
+    <EditText
+        android:id="@+id/adminemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Email"
+        android:padding="10dp"
+        android:layout_below="@id/fullname"/>
+
+    <EditText
+        android:id="@+id/adminpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_below="@+id/adminemail"
+         />
+
+    <Button
+        android:id="@+id/registerbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="13dp"
+        android:layout_below="@id/adminpassword"/>
+
+    <TextView
+        android:id="@+id/createText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Already Registered? Click here"
+        android:layout_below="@id/registerbutton"
+        android:layout_centerHorizontal="true"/>
+
+    <ProgressBar
+        android:id="@+id/adminprogress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="181dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="182dp"
+        android:layout_marginBottom="77dp"
+        android:layout_centerInParent="true"
+        android:progressTint="#C61451"
+        tools:visibility="invisible" />
+
+
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/login_background"
+    tools:context=".UploadAssignment"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="    Assignment"
+        android:textSize="50sp"
+        />
+    <EditText
+        android:id="@+id/edt2"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint=".   Title"
+        android:inputType="textMultiLine"
+        />
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:ems="10"
+        android:hint=".    Instruction(optional)"
+        android:inputType="textMultiLine"
+
+        android:textSize="24sp"
+
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="136dp"
+        android:layout_height="23dp"
+
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+
+
+        android:text="Starts"
+
+        />
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="128dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="10dp"
+
+        />
+    <TextView
+        android:id="@+id/textView3"
+
+        android:layout_width="136dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="-60dp"
+        android:textSize="20dp"
+
+        android:text="Ends"
+
+        />
+
+    <Button
+
+        android:id="@+id/b2"
+        android:layout_width="128dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="210dp"
+
+        />
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="118dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="40dp"
+
+        android:layout_marginEnd="147dp"
+        android:textSize="19dp"
+
+        android:text="AttachFile"
+
+        />
+
+
+    <Button
+        android:id="@+id/Upload"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="145dp"
+
+
+        android:text="Upload"
+        android:layout_marginBottom="10dp"
+
+        />
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/Assign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:text="Assign"
+        />
+
+
+
+</LinearLayout>

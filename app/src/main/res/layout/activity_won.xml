@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".WonActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/ic_back"
+            app:tint="@color/white"
+            android:background="@drawable/ic_baseline_arrow_back_ios_24"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:onClick="back"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pbar"
+        android:layout_centerVertical="true"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp">
+
+        <ProgressBar
+            android:id="@+id/resultbar"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:progressDrawable="@drawable/result_progress"
+            android:indeterminateOnly="false"
+            tools:progress="60"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/score"
+            android:text="60/100"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:layout_centerInParent="true"
+
+            />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/showr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_below="@id/pbar"/>
+
+
+</RelativeLayout>

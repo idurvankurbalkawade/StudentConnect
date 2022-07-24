@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".StudentRegistration">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Registration"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+        android:textAlignment="center"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/til1"
+        android:layout_below="@id/tv1"
+        app:errorTextAppearance="@style/ErrorTextAppearance"
+        >
+        <EditText
+            android:id="@+id/txt_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Full Name"
+            android:layout_marginBottom="20dp"
+            android:textSize="20sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/til2"
+        android:layout_below="@id/til1"
+        app:errorTextAppearance="@style/ErrorTextAppearance"
+        >
+        <EditText
+            android:id="@+id/txt_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email"
+            android:layout_marginBottom="20dp"
+            android:textSize="20sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/til3"
+        android:layout_below="@id/til2"
+        app:passwordToggleEnabled="true"
+        app:errorTextAppearance="@style/ErrorTextAppearance"
+        >
+        <EditText
+            android:id="@+id/txt_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/til4"
+        android:layout_below="@id/til3"
+        app:passwordToggleEnabled="true"
+        app:errorTextAppearance="@style/ErrorTextAppearance"
+        >
+        <EditText
+            android:id="@+id/txt_confirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Confirm Password"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_baseline_subject_24"
+        android:drawablePadding="20dp"
+        android:text="Select Class"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/til4"
+        />
+
+    <Spinner
+        android:id="@+id/studClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#592085"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/tv2"
+        />
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:text="Register"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/studClass"
+        tools:ignore="UnknownId" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+    </RelativeLayout>
+
+</ScrollView>
