@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login"
+    android:background="@drawable/wall_gradient"
     tools:context=".StudentLogin">
 
     <RelativeLayout
@@ -27,7 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/til_email"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="40dp"
         android:layout_below="@+id/signin"
         >
 
